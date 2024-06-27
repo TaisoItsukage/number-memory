@@ -124,6 +124,8 @@ export default function Home() {
             <Input
               id="digits"
               type="number"
+              inputMode="numeric"
+              pattern="[0-9]*"
               value={digits}
               onChange={(e) => setDigits(e.target.value)}
               placeholder="Enter number of digits"
@@ -136,6 +138,8 @@ export default function Home() {
             <Input
               id="seconds"
               type="number"
+              inputMode="numeric"
+              pattern="[0-9]*"
               value={seconds}
               onChange={(e) => setSeconds(e.target.value)}
               placeholder="Enter seconds to memorize"
@@ -162,7 +166,9 @@ export default function Home() {
             </label>
             <Input
               id="answer"
-              type="text"
+              type="number"
+              inputMode="numeric"
+              pattern="[0-9]*"
               value={userAnswer}
               onChange={(e) => setUserAnswer(e.target.value)}
               placeholder="Enter your answer"
