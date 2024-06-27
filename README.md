@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NumberMemory App
 
-## Getting Started
+## 重要な注意点
 
-First, run the development server:
+**このプロジェクトは実験的なものです。**
+README からアプリケーションコードに至るまで、すべての要素が AI アシスタント（Claude 3.5 Sonnet）によって生成されています。そのため、以下の点にご注意ください：
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- コードの品質や最適性に問題がある可能性があります。
+- セキュリティ上の脆弱性が存在する可能性があります。
+- パフォーマンスが最適化されていない可能性があります。
+- ベストプラクティスに従っていない部分があるかもしれません。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+このプロジェクトは、AI 支援開発の可能性と限界を探るための実験的な取り組みです。実際の商用プロジェクトやミッションクリティカルなアプリケーションでは、人間の開発者による綿密なレビューと検証が必要です。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 概要
+NumberMemory は、数字の記憶力を鍛えるためのシンプルで楽しいウェブアプリケーションです。ユーザーは指定した桁数の数字を、設定した時間内で記憶し、その後再現することに挑戦します。
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 遊び方
 
-## Learn More
+1. **設定画面**
+   - 「Number of digits」で覚える数字の桁数を入力します。
+   - 「Seconds to memorize」で数字を表示する秒数を入力します。
+   - 「Start」ボタンをクリックしてゲームを開始します。
 
-To learn more about Next.js, take a look at the following resources:
+2. **数字表示画面**
+   - 設定した桁数のランダムな数字が表示されます。
+   - 設定した秒数だけ数字が表示され、カウントダウンされます。
+   - この間に数字を記憶してください。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **回答入力画面**
+   - 数字の表示が終わると、自動的に回答入力画面に切り替わります。
+   - 記憶した数字を入力フィールドに入力します。
+   - 「Submit」ボタンをクリックして回答を送信します。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. **結果画面**
+   - 正解か不正解かが表示されます。
+   - 正解の数字と自分の回答が表示されます。
+   - 「Play Again」ボタンをクリックして新しいゲームを開始できます。
 
-## Deploy on Vercel
+## 操作のヒント
+- 各画面でEnterキーを押すことで、次の操作（Start, Submit, Play Again）を実行できます。
+- 回答入力画面では、自動的に入力フィールドにフォーカスが当たるので、すぐに入力を始められます。
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 開発について
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+このアプリケーションは、OpenAI の ChatGPT モデルである Claude 3.5 Sonnet を使用して開発されました。開発プロセスには以下の要素が含まれています：
+
+- **Claude 3.5 Sonnet**: アプリケーションの設計、コーディング、問題解決のためのAIアシスタント
+- **Artifacts**: コードブロック、コンポーネント、READMEなどの生成に使用
+- **Projects**: 開発環境の設定やリソースの管理に活用
+
+すべてのコード、デザインの決定、問題解決は Claude 3.5 Sonnet との対話を通じて行われ、人間の開発者がガイダンスと最終的な判断を提供しました。
+
+## 技術スタック
+
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- Vercel (ホスティング)
+
+
+## 今後の展望
+
+- 難易度レベルの追加
+- ハイスコア機能の実装
+- 視覚的な記憶ゲーム（画像や図形）の追加
+- 人間の開発者によるコードレビューと最適化
+
+このプロジェクトは、AI支援開発の可能性を示す実験的な取り組みです。フィードバックや改善のアイデアがありましたら、ぜひお聞かせください！
