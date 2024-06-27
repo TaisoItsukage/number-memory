@@ -113,8 +113,8 @@ export default function Home() {
     }
   }
 
-  return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
+return (
+    <div className="flex flex-col items-center justify-center min-h-[100dvh] bg-gray-100 p-4 overflow-hidden">
       {gameState === GameState.Setup && (
         <div className="space-y-4 w-full max-w-md">
           <div>
