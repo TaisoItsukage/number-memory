@@ -21,14 +21,6 @@ export const metadata: Metadata = {
     description: 'Test and improve your number memorization skills with this engaging web app.',
     url: 'https://number-memory.vercel.app',
     siteName: 'NumberMemory',
-    images: [
-      {
-        url: 'https://number-memory.vercel.app/share-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'NumberMemory App Preview',
-      },
-    ],
     locale: 'en_US',
     type: 'website',
   },
@@ -36,7 +28,6 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'NumberMemory - Challenge Your Memory',
     description: 'Test and improve your number memorization skills with this engaging web app.',
-    images: ['https://number-memory.vercel.app/share-image.png'],
     creator: '@ItsukageT',
     // creatorId: '1234567890', // Twitter user ID if available
   },
